@@ -1,0 +1,35 @@
+.contact {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.contactList {
+  padding: 0;
+}
+
+li {
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.contactBtn {
+  width: 70px;
+  justify-content: center;
+  background-color: coral;
+  height: 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contactNames {
+  text-transform: capitalize;
+}
