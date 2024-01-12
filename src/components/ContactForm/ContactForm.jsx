@@ -1,10 +1,11 @@
-import css from './FormContact.module.css';
+import css from './ContactForm.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { nanoid } from '@reduxjs/toolkit';
-import { addContactsAction } from '../../redux/contactsSlice';
+import { addContact } from '../../redux/operations';
+import { selectContacts } from '../../redux/selectors';
 
 export const FormContact = () => {
-  const contacts = useSelector(state => state.contacts.contacts);
+  const contacts = useSelector(selectContacts);
 
   const dispatch = useDispatch();
 
@@ -22,7 +23,7 @@ export const FormContact = () => {
     if (isNameExist) {
       alert(`${newContact.name} is already in contacts!`);
     } else {
-      dispatch(addContactsAction(newContact));
+      dispatch(addContact(newContact));
 
       e.target.reset();
     }

@@ -2,9 +2,10 @@ import React from 'react';
 import css from './Filter.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { filterContacts } from '../../redux/filterSlice';
+import { selectFilter } from '../../redux/selectors';
 
 export const Filter = () => {
-  const filter = useSelector(state => state.filter.filter);
+  const filter = useSelector(selectFilter);
 
   const dispatch = useDispatch();
 
@@ -20,7 +21,6 @@ export const Filter = () => {
         type="text"
         value={filter}
         onChange={changeFilter}
-        // changefilter={changefilter}
         filter={filter}
       />
     </label>
