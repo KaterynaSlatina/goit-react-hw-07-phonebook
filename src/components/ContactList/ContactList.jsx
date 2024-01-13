@@ -12,9 +12,11 @@ export const ContactList = () => {
     dispatch(deleteContact(id));
   };
 
-  const findContacts = contacts.filter(contact =>
-    contact.name.toLowerCase().includes(filter.toLowerCase())
-  );
+  const findContacts = Array.isArray(contacts)
+    ? contacts.filter(contact =>
+        contact.name.toLowerCase().includes(filter.toLowerCase())
+      )
+    : [];
 
   return (
     <div className={css.contact}>
