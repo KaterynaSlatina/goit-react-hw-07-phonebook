@@ -1,6 +1,8 @@
 @import-normalize; /* bring in normalize.css styles */
 
 body {
+  background: url(/public/cute-cat-talking-telephone.avif) no-repeat left;
+  background-attachment: fixed;
   margin: 0 auto;
   width: 400px;
   font-size: 25px;

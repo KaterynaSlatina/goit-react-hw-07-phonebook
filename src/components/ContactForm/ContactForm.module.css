@@ -1,11 +1,19 @@
 .btnForm {
   width: 200px;
   justify-content: center;
-  background-color: skyblue;
+  background-color: #e28090;
   height: 30px;
   font-size: 20px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnForm:hover,
+.btnForm:focus {
+  background-color: lightpink;
+
+  transition: 0.3s;
 }
 
 .formContact {
