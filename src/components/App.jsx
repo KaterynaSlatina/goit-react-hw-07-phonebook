@@ -7,11 +7,15 @@ import '../redux/store';
 import { useEffect } from 'react';
 import { fetchContacts } from '../redux/operations';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectError, selectIsLoading } from '../redux/selectors';
+import {
+  selectContacts,
+  selectError,
+  selectIsLoading,
+} from '../redux/selectors';
 
 export const App = () => {
   const dispatch = useDispatch();
-
+  const contacts = useSelector(selectContacts);
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
 
@@ -26,7 +30,12 @@ export const App = () => {
       <h2>Contacts list</h2>
       {isLoading && !error && <b>Request in progress...</b>}
       <ContactList />
-      <Filter />
+      {contacts.length > 0 ? (
+        <Filter />
+      ) : (
+        <div>Your phonebook is empty. Add first contact!</div>
+      )}
+      {/* <Filter /> */}
     </>
   );
 };

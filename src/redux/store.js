@@ -34,3 +34,10 @@ export const store = configureStore({
     }),
 });
 export const persistor = persistStore(store);
+
+// const reduxThunk = store => next => action => {
+//   if (typeof action === 'function') {
+//     action (store.dispatch)
+//   }
+//   next(action)
+// }

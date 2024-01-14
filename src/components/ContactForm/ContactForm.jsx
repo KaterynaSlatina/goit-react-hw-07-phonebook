@@ -2,10 +2,10 @@ import css from './ContactForm.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { nanoid } from '@reduxjs/toolkit';
 import { addContact } from '../../redux/operations';
-import { selectContacts } from '../../redux/selectors';
+import { selectVisibleContacts } from '../../redux/selectors';
 
 export const FormContact = () => {
-  const contacts = useSelector(selectContacts);
+  const contacts = useSelector(selectVisibleContacts);
 
   const dispatch = useDispatch();
 
