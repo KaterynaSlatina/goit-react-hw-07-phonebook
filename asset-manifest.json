@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-07-phonebook/static/css/main.4eba9114.css",
+    "main.css": "/goit-react-hw-07-phonebook/static/css/main.8550cddd.css",
     "main.js": "/goit-react-hw-07-phonebook/static/js/main.aa52fbc3.js",
+    "static/media/cute-cat-talking-telephone.avif": "/goit-react-hw-07-phonebook/static/media/cute-cat-talking-telephone.1808de7361037c07f09d.avif",
     "index.html": "/goit-react-hw-07-phonebook/index.html",
-    "main.4eba9114.css.map": "/goit-react-hw-07-phonebook/static/css/main.4eba9114.css.map",
+    "main.8550cddd.css.map": "/goit-react-hw-07-phonebook/static/css/main.8550cddd.css.map",
     "main.aa52fbc3.js.map": "/goit-react-hw-07-phonebook/static/js/main.aa52fbc3.js.map"
   },
   "entrypoints": [
-    "static/css/main.4eba9114.css",
+    "static/css/main.8550cddd.css",
     "static/js/main.aa52fbc3.js"
   ]
 }
